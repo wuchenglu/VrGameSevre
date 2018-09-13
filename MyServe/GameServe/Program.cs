@@ -13,7 +13,7 @@ namespace ControlConterServe
             ConfigXmlFileRead.ReadGameFilePath(currentGameToLoadFilePath, allGameResourse);
             ServerStart serverStart = new ServerStart(60);
             serverStart.center = new HandlerCenter();
-            serverStart.Start(12580);
+            serverStart.Start(3389);
             Console.WriteLine("服务器已启动");
             while (true)
             {

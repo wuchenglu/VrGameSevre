@@ -51,7 +51,7 @@ namespace NetFrame
             // 外网IP  内网IP192.168.x.x 本机IP一个127.0.0.1
             try
             {
-                server.Bind(new IPEndPoint(IPAddress.Any, port));
+                server.Bind(new IPEndPoint(IPAddress.Parse("172.17.41.121"), port));
                 //置于监听状态
                 server.Listen(10);
                 StartAccept(null);
