@@ -31,6 +31,8 @@ namespace ControlConterServe
             try
             {
                 ACCOUNT accaount = (ACCOUNT)JsonConvert.DeserializeObject<ACCOUNT>(receive);
+                //string jsonString = JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings { StringEscapeHandling = StringEscapeHandling.EscapeNonAscii });
+
                 Console.WriteLine(accaount.Accaount);
             }
             catch (Exception w)
