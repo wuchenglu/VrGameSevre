@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>NetFrame</AssemblyName>
+    <RootNamespace>NetFrame</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>D:\wuchenglu\VrGameSevre\NetFrame\ThirdLib\</OutputPath>
+  </PropertyGroup>
+
+</Project>
