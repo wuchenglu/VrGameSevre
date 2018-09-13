@@ -2,7 +2,7 @@
 using NetFrame;
 using Newtonsoft.Json;
 using ControlConterServe.logic;
-
+using ControlConterServe.dao;
 namespace ControlConterServe
 {
     public class HandlerCenter : AbsHandlerCenter
@@ -30,7 +30,8 @@ namespace ControlConterServe
             string receive = receive2[0] + "}";
             try
             {
-
+                ACCOUNT accaount = (ACCOUNT)JsonConvert.DeserializeObject<ACCOUNT>(receive);
+                Console.WriteLine(accaount.Accaount);
             }
             catch (Exception w)
             {

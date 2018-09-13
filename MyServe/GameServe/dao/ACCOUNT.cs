@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ControlConterServe.dao
 {
+    [Serializable]
    public  class ACCOUNT
    {
        private int id;
