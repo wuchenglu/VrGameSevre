@@ -18,4 +18,8 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.13" />
+  </ItemGroup>
+
 </Project>

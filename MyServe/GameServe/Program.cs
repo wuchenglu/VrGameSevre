@@ -15,9 +15,10 @@ namespace ControlConterServe
             serverStart.center = new HandlerCenter();
             serverStart.Start(3389);
             Console.WriteLine("服务器已启动");
+
             while (true)
             {
-
+                Console.ReadLine();
             }
         }
     }
