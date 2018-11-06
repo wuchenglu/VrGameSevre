@@ -12,10 +12,10 @@ namespace GameServe.Test
     {
         MySqlConnection mysqlConnection;
         DataSet dataSet;
-        string IP = "192.168.0.101";
-        string UserName = "root";
-        string Password = "123456";
-        string Database = "ga";
+        string IP = "";
+        string UserName = "";
+        string Password = "";
+        string Database = "";
         /// <summary>
         /// 建立mysql连接
         /// </summary>
@@ -102,10 +102,11 @@ namespace GameServe.Test
             try
             {
                 mysqlConnection.Open();
-                MySqlDataAdapter mysqlDataAdapter = new MySqlDataAdapter("Select * from " + table, mysqlConnection);
-                dataSet = new DataSet();
-                mysqlDataAdapter.Fill(dataSet, table);
-                dataView = dataSet.Tables[table].DefaultView;
+                //MySqlDataAdapter mysqlDataAdapter = new MySqlDataAdapter("Select * from " + table + " WHERE id = '1'", mysqlConnection);
+                //dataSet = new DataSet();
+                //mysqlDataAdapter.Fill(dataSet, table);
+                //dataView = dataSet.Tables[table].DefaultView; 
+                TestDatebase.getResultset(TestDatebase.getSqlCommand("Select * from " + table + " WHERE id = '1'", mysqlConnection));
             }
             catch (MySqlException ex)
             {
